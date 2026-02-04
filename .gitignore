@@ -1,0 +1,18 @@
+# virtual env
+holo-tutor-env/
+
+# python cache
+__pycache__/
+*.pyc
+
+# generated media
+*.jpg
+*.png
+
+# mac junk
+.DS_Store
+
+# secrets
+.env
+config.py
+

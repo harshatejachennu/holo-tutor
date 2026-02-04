@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Holo-Tutor Hologram Viewer</title>
+    <style>
+        html, body {
+            margin: 0; padding: 0; height: 100%;
+            background-color: black;
+            overflow: hidden;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        img {
+            width: 100vw;
+            height: 100vh;
+            object-fit: contain; /* maintain aspect ratio, fill screen */
+            -webkit-user-select: none; /* disable selection on mobile */
+            user-select: none;
+        }
+    </style>
+    <script>
+        function refreshImage() {
+            const img = document.getElementById('hologram');
+            img.src = `hologram_image.jpg?timestamp=${new Date().getTime()}`;
+        }
+        setInterval(refreshImage, 5000); // Refresh every 5 seconds
+    </script>
+</head>
+<body>
+    <img id="hologram" src="hologram_image.jpg" alt="Hologram Image" />
+</body>
+</html>

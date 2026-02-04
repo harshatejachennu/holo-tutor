@@ -2,7 +2,7 @@ Holo-Tutor — AI Hologram Study Assistant
 
 This is a personal project where I built a voice-controlled study assistant that explains concepts out loud and shows supporting visuals as a “hologram” using a Pepper’s Ghost-style projection setup (phone + plexiglass + bell jar).
 
-The idea was to make studying more interactive. Instead of just asking an AI for an answer, you can speak a question, hear the explanation, and see a floating visual at the same time.
+The idea was to make studying more interactive. Instead of just getting an answer, you can ask a question, hear the explanation, and see a floating visual at the same time.
 
 I built this to experiment with AI APIs, speech recognition, image processing, and a simple physical projection system.
 

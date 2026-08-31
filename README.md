@@ -77,8 +77,14 @@ hologram_image.py — image fetch + flip
 index.html — iPhone viewer page
 
 How To Run
+
+Create an OpenRouter API key, then provide it through an environment variable. Never commit the key.
+
+```bash
 source holo-tutor-env/bin/activate
+export OPENROUTER_API_KEY="your-key-here"
 python HoloTutorFull.py
+```
 
 
 Then open the viewer page on your phone (same Wi-Fi):

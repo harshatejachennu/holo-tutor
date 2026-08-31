@@ -1,7 +1,14 @@
+import os
+
 import requests
 import json
 
-API_KEY = "EXAMPLE_API_KEY"
+API_KEY = os.getenv("OPENROUTER_API_KEY")
+if not API_KEY:
+    raise RuntimeError(
+        "OPENROUTER_API_KEY is not set. Export it before running Holo-Tutor."
+    )
+
 API_URL = "https://openrouter.ai/api/v1/chat/completions"
 MODEL = "google/gemma-3-27b-it:free"
 
